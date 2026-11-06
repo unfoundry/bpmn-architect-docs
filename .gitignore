@@ -147,3 +147,9 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# VitePress build and cache outputs
+docs/.vitepress/dist
+docs/.vitepress/cache
+.vitepress/dist
+.vitepress/cache
