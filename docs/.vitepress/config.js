@@ -1,15 +1,17 @@
 import { defineConfig } from 'vitepress';
 
+const base = process.env.BASE_PATH || '/bpmn-architect-docs/';
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'BPMN Architect',
   description: 'Collaborative enterprise BPMN 2.0 process modeling platform with headless microservice persistence & high-availability static rendering',
-  base: process.env.BASE_PATH || '/bpmn-architect-docs/',
+  base,
   lang: 'en-US',
   cleanUrls: true,
 
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}favicon.svg` }],
     ['meta', { name: 'theme-color', content: '#158cba' }]
   ],
 

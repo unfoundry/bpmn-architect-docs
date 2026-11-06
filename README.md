@@ -52,6 +52,16 @@ The dev server will start at `http://localhost:5173/` with hot-module replacemen
 
 ---
 
+## Deployment to GitHub Pages
+
+This repository includes an automated GitHub Actions workflow at `.github/workflows/deploy.yml` that builds and publishes the documentation to GitHub Pages on every push to `main`:
+
+1. In GitHub, go to **Settings** &rarr; **Pages**.
+2. Under **Build and deployment** &rarr; **Source**, select **GitHub Actions**.
+3. Pushes to `main` (or manual triggers via the **Actions** tab) will build and publish the site to `https://<org>.github.io/bpmn-architect-docs/`.
+
+---
+
 ## License
 
 Apache-2.0. Copyright &copy; 2026 BPMN Architect / Unfoundry.
